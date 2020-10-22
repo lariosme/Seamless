@@ -1,0 +1,46 @@
+//Links
+
+a {
+  color: $tuatara;
+  &:hover {
+    color: $tuatara;
+    text-decoration: none;
+  }
+}
+
+.bodyLink {
+  background-color: $smoke;
+  color: $tuatara;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  &:hover {
+    background-color: $smoke;
+    color: $tuatara;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+}
+
+.navLink {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 600;
+  &:hover {
+    background-color: $smoke;
+  }
+  &:focus {
+    background-color: $smoke;
+  }
+}
+
+.footerLink {
+  p {
+      //Properties
+      text-align: left;
+
+      //Styles
+      color: $smoke;
+  }
+}

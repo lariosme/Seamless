@@ -1,0 +1,70 @@
+.footerAlt {
+  //Properties
+  width: 100%;
+  padding: $md-spacer;
+  //Styles
+  background-color: $white;
+  .links {
+    //Properties
+    display: flex;
+    flex-direction: column;
+    .lni,
+    .fas {
+      //Properties
+      margin-left: $xs-spacer;
+    }
+  }
+  a {
+    //Properties
+    margin-bottom: $sm-spacer;
+    text-align: center;
+    //Styles
+    color: $navy-blue;
+    &:hover {
+      //Styles
+      color: $catalina-blue;
+    }
+  }
+  .legal {
+    //Properties
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      //Properties
+      margin: 0 $sm-spacer + $sm-spacer;
+      margin-bottom: $md-spacer;
+      text-align: center;
+      //Styles
+      color: $tuatara;
+    }
+  }
+}
+@include large {
+  footer {
+    a {
+      //Properties
+      text-align: left;
+    }
+    .legal {
+      //Properties
+      flex-direction: row;
+      p {
+        //Properties
+        margin-bottom: 0;
+      }
+      a {
+        //Properties
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+      .links {
+        //Properties
+        flex-direction: row;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

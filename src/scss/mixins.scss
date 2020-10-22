@@ -1,0 +1,110 @@
+// Breakpoints
+
+$extra-small: 0rem;
+$small: 36rem;
+$medium: 48rem;
+$large: 62rem;
+$extra-large: 75rem;
+
+@mixin extra-small {
+    @media (min-width: #{$extra-small}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+@mixin extra-large {
+    @media (min-width: #{$extra-large}) {
+        @content;
+    }
+}
+
+// Spacers
+
+$xs-spacer: 8px;
+$sm-spacer: 16px;
+$md-spacer: 32px;
+$lg-spacer: 64px;
+$xl-spacer: 128px;
+
+// Colors
+
+// Primary Colors
+
+// UHC Blue HEX:#002677
+$catalina-blue: RGBA(0, 38, 119, 1.00);
+// UHC CTA Blue HEX:#196ECF
+$navy-blue: RGBA(24, 110, 207, 1.00);
+
+// Secondary Colors
+
+// UHC Bright Blue HEX:#00BED5
+$iris-blue: RGBA(5, 190, 213, 1.00);
+// UHC Gold HEX:#F5B700
+$ucla-gold: RGBA(245, 183, 0, 1.00);
+// UHC Orange HEX:#FF681F
+$crayon-orange: RGBA(255, 104, 30, 1.00);
+
+// Supporting Colors
+
+// UHC CTA Orange HEX: #D14600
+$grenadier: RGBA(209, 70, 0, 1.00);
+// UHC CTA Dark Orange HEX:#AA3600
+$fire: RGBA(170, 54, 0, 1.00);
+
+// Global Colors - Alerts, Forms, etc.
+
+$red-orange: rgba(255, 65, 54, 1);
+$red-orange-75: rgba(255, 113, 105, 1);
+$red-orange-50: rgba(255, 160, 154, 1);
+$red-orange-25: rgba(255, 207, 205, 1);
+$red-orange-dark: rgba(127, 32, 26, 1);
+
+$lightning: rgba(248, 197, 28, 1);
+$lightning-75: rgba(250, 212, 85, 1);
+$lightning-50: rgba(251, 226, 141, 1);
+$lightning-25: rgba(253, 240, 198, 1);
+$lightning-dark: rgba(123, 98, 13, 1);
+
+$true-blue: rgba(0, 116, 217, 1);
+$true-blue-75: rgba(64, 151, 227, 1);
+$true-blue-50: rgba(127, 185, 236, 1);
+$true-blue-25: rgba(191, 220, 245, 1);
+$true-blue-dark: rgba(0, 57, 108, 1);
+
+$shamrock: rgba(72, 210, 160, 1);
+$shamrock-75: rgba(118, 222, 184, 1);
+$shamrock-50: rgba(163, 232, 207, 1);
+$shamrock-25: rgba(209, 244, 231, 1);
+$shamrock-dark: rgba(35, 104, 79, 1);
+
+// Global Use - Neutral Colors
+
+// Lights
+
+$alto: rgba(218, 218, 218, 1);
+$smoke: rgba(245, 245, 245, 1);
+$white: rgba(255, 255, 255, 1);
+
+// Darks
+
+$black: rgba(17, 17, 17, 1);
+$onyx: rgba(34, 34, 34, 1);
+$tuatara: rgba(51, 51, 51, 1);

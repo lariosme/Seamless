@@ -1,0 +1,50 @@
+//Buttons
+
+//Primary Button Styles
+
+.btn-primary {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $catalina-blue;
+  border: none;
+  border-radius: $md-spacer;
+  height: 2.5rem;
+  padding: 0 2rem;
+  color: $white;
+  &:hover {
+    // box-shadow: 0.5rem 0.5rem $hng;
+    background-color: $navy-blue;
+    color: $white;
+    transition: 0.25s;
+  }
+  &:active {
+    background-color: $tuatara !important;
+  }
+}
+
+//Secondary Button Styles
+
+//Nav Buttons
+
+.navButtons {
+    display: flex;
+  .navButton {
+    border: 1px solid $catalina-blue;
+    border-radius: 2rem;
+    height: 1.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    background-color: $white;
+    width: 13.5rem;
+    color: rgb(0, 38, 119);
+    font-size: 14px;
+    font-family: "UHC 2020 Sans Bold";
+    // margin-right: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

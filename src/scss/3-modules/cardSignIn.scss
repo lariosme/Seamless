@@ -1,0 +1,21 @@
+.cardSignIn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $lg-spacer;
+  padding: $sm-spacer;
+}
+
+@include large {
+  .cardSignIn {
+    width: 768px;
+    margin-bottom: $xl-spacer;
+    padding: $md-spacer $sm-spacer;
+    .links {
+        display: flex;
+        margin-top: $sm-spacer;
+        p {
+            margin: 0 1rem 0 0;
+        }
+    }
+  }
+}

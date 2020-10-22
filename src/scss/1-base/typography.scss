@@ -1,0 +1,218 @@
+//Typography 
+
+//UHC 2020 Sans
+@font-face {
+    font-family: "UHC 2020 Sans Black";
+    src: url("../fonts/UHC2020Sans-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Black Italic";
+    src: url("../fonts/UHC2020Sans-BlackItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Bold";
+    src: url("../fonts/UHC2020Sans-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Bold Italic";
+    src: url("../fonts/UHC2020Sans-BoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Italic";
+    src: url("../fonts/UHC2020Sans-Italic.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Medium";
+    src: url("../fonts/UHC2020Sans-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Medium Italic";
+    src: url("../fonts/UHC2020Sans-MediumItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Regular";
+    src: url("../fonts/UHC2020Sans-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Semi Bold";
+    src: url("../fonts/UHC2020Sans-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC 2020 Sans Semi Bold Italic";
+    src: url("../fonts/UHC2020Sans-SemiBoldItalic.otf") format("opentype");
+}
+
+//UHC Serif Headline
+@font-face {
+    font-family: "UHC Serif Headline Semi Bold";
+    src: url("../fonts/UHCSerifHeadline-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "UHC Serif Headline Semi Bold Italic";
+    src: url("../fonts/UHCSerifHeadline-SemiBoldItalic.otf") format("opentype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "UHC Serif Headline Semi Bold", sans-serif;
+}
+
+//Dynamic Font settings
+
+.h100 {
+    font-size: 1.875rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+
+    @include medium {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    @include large {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+.static100 {
+    font-size: 1.875rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+}
+
+.h200 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+
+    @include medium {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    @include large {
+        font-size: 2.375rem;
+        line-height: 2.875rem;
+    }
+}
+
+.static200 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+}
+
+.h300 {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+
+    @include medium {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    @include large {
+        font-size: 2.125rem;
+        line-height: 2.5rem;
+    }
+}
+
+.static300 {
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+}
+
+.h400 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+
+    @include medium {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    @include large {
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+}
+
+.static400 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: $md-spacer;
+}
+
+.h500 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 600;
+    margin-bottom: $sm-spacer;
+}
+
+.h600 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: $sm-spacer;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.02rem;
+}
+
+.lead {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.0225rem;
+}
+
+.small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.0175rem;
+}
+
+.micro {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: -0.015rem;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+.textAlignCenter {
+    text-align: center;
+}
+.textAlignRight {
+    text-align: right;
+}
+
+.label-light {
+    font-family: "UHC 2020 Sans Semi Bold";
+    text-align: center;
+    color: $smoke;
+    margin-bottom: 0;
+}
+
+.label-dark {
+    font-family: "UHC 2020 Sans Semi Bold";
+    text-align: center; 
+    color: $tuatara;
+    margin-bottom: 0;
+}

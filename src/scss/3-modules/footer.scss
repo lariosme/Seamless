@@ -1,0 +1,87 @@
+.footer {
+  //Properties
+  width: 100%;
+  padding: $md-spacer;
+  //Styles
+  background-color: $catalina-blue;
+  .logo {
+    //Properties
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-bottom: $md-spacer;
+    margin-left: auto;
+    height: 2.5rem;
+  }
+  .links {
+    //Properties
+    display: flex;
+    flex-direction: column;
+    .lni,
+    .fas {
+      //Properties
+      margin-left: $xs-spacer;
+    }
+  }
+  a {
+    //Properties
+    margin-bottom: $sm-spacer;
+    text-align: center;
+    //Styles
+    color: $smoke;
+    &:hover {
+      //Styles
+      color: $smoke;
+    }
+  }
+  hr {
+    //Properties
+    border-top: 1px solid rgba($color: $smoke, $alpha: 0.5);
+    margin: 32px 0;
+  }
+  .legal {
+    //Properties
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      //Properties
+      margin: 0 $sm-spacer + $sm-spacer;
+      margin-bottom: $md-spacer;
+      text-align: center;
+      //Styles
+      color: $smoke;
+    }
+  }
+}
+@include large {
+  footer {
+    .logo {
+      //Properties
+      justify-content: start;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    a {
+      //Properties
+      text-align: left;
+    }
+    .legal {
+      //Properties
+      flex-direction: row;
+      p {
+        //Properties
+        margin-bottom: 0;
+      }
+      a {
+        //Properties
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+      .links {
+        //Properties
+        flex-direction: row;
+      }
+    }
+  }
+}

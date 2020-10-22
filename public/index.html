@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <!-- Define Viewport — Ensures No Horizontal Scroll -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- Page Name -->
+    <title>United Healthcare Link</title>
+
+    <!-- Style Sheets and Content Deleivery Networks -->
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="../src/scss/styles.scss" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/tools/animate/animate.min.css" />
+
+    <!-- AOS CSS -->
+    <link href="/css/tools/aos/aos.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2cdba6b23f.js" crossorigin="anonymous"></script>
+
+    <!-- Fullpage -->
+    <link rel="stylesheet" type="text/css" href="/css/tools/fullpage/fullpage.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" />
+
+    <!-- LineIcons -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+
+    <!-- End Style Sheets and Content Deleivery Networks -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  </head>
+
+  <body>
+
+    <!-- Page Content -->
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- End Page Content -->
+
+    <!-- JavaScript File-->
+    <script type="text/javascript" src="js/fileName.js"></script>
+
+    <!-- WOW JS -->
+    <script type="text/javascript" src="/js/tools/wow/wow.js"></script>
+
+    <!-- AOS JS -->
+    <script src="/js/tools/aos/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Fullpage JS -->
+    <script
+      type="text/javascript"
+      src="/js/tools/fullpage/fullpage.js"
+    ></script>
+
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        // navigation: true,
+        scrollBar: true,
+        loopBottom: true,
+      });
+
+      //methods
+      // fullpage_api.setAllowScrolling(false);
+    </script>
+
+    <!-- End JavaScript -->
+  </body>
+  
+</html>

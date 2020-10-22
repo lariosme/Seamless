@@ -1,0 +1,20 @@
+.cardWidget {
+  margin-bottom: 120px;
+  height: auto;
+  display: flex;
+}
+
+@include large {
+  .cardWidget {
+    .formGroup {
+      display: flex;
+      justify-content: space-between;
+    }
+    .formGroupRadios {
+      display: flex;
+      p {
+        margin-left: $xs-spacer;
+      }
+    }
+  }
+}

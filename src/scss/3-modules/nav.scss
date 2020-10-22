@@ -1,0 +1,97 @@
+nav {
+  .desktopNav {
+    display: none;
+  }
+  margin-bottom: $lg-spacer;
+  .mobileNav {
+    display: flex;
+    align-items: center;
+    // padding: 0 1rem;
+    height: 4rem;
+    background-color: $catalina-blue;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@include small {
+  nav {
+    .mobileNav {
+      .container {
+        width: 33.75rem;
+      }
+    }
+  }
+}
+
+@include medium {
+  nav {
+    .mobileNav {
+      .container {
+        width: 45rem;
+      }
+    }
+  }
+}
+
+@include large {
+  nav {
+    .mobileNav {
+      display: none;
+    }
+    .desktopNav {
+      display: block;
+      .row {
+        background-color: $white;
+      }
+
+      .navUtilities {
+        display: flex;
+        flex-direction: column;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 62rem;
+        height: 6rem;
+        padding: 2rem;
+        background-color: $white;
+
+        .logo {
+          height: 2.5rem;
+        }
+        a {
+          margin-right: 0.5rem;
+        }
+
+        .lni, .fas {
+          color: $catalina-blue;
+          margin-right: 1rem;
+        }
+        .notification {
+          color: $ucla-gold;
+        }
+      }
+      .bottom {
+        height: 3rem;
+        background-color: $catalina-blue;
+      }
+    }
+  }
+}
+
+@include extra-large {
+  nav {
+    .desktopNav {
+      .top{
+        width: 71.25rem;
+        padding: 1rem;
+      }
+    }
+  }
+}

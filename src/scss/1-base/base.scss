@@ -1,0 +1,75 @@
+//Base
+
+//Dafulting base properties and styles  provided by HTML
+
+* {
+  //Properties
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  //Properties
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  //Properties
+  font-family: "UHC 2020 Sans Regular", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+
+  //Styles
+  background-color: $smoke;
+  color: $tuatara;
+}
+
+//Text selection color
+
+::selection {
+  //Styles
+  background: $alto; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  //Styles
+  background: $alto; /* Gecko Browsers */
+}
+
+//Default LineIcons styles
+
+.lni, .fas {
+  //Styles
+  color: $alto;
+}
+
+//Card styles
+
+.card {
+  //Properties
+  // margin-right: $sm-spacer;
+  margin-bottom: $md-spacer;
+  // margin-left: $sm-spacer;
+  padding: $md-spacer $sm-spacer;
+
+  //Styles
+
+  //Overrides Bootstrap styles: must remove default styles BEFORE applying new ones
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  box-shadow: 0px 2px 4px 0px rgba($tuatara, 0.05);
+}
+
+@include large {
+  .card {
+    //Properties
+    padding: $md-spacer;
+  }
+}
