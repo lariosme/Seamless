@@ -18,7 +18,8 @@ class FooterAlt extends Component {
         <Container>
         <Row className="legal">
             <div className="links">
-            <p className="small">&#169; 2020 United HealthCare Services, Inc. All Rights Reserved.</p>
+            <p className="small">&#169; 2020 United HealthCare Services, Inc.</p>
+            <p className="small">All Rights Reserved.</p>
               <Router>
                 <Link to="#" className="footerLink small">
                   Privacy

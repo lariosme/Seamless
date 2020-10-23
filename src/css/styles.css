@@ -565,35 +565,44 @@ nav .mobileNav .container {
 }
 .footerAlt .legal p {
   margin: 0 32px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   text-align: center;
   color: #333333;
 }
+.footerAlt .legal p:nth-child(2) {
+  margin-bottom: 32px;
+}
 
 @media (min-width: 62rem) {
-  footer a {
+  .footerAlt a {
     text-align: left;
   }
-  footer .legal {
+  .footerAlt .legal {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  footer .legal p {
+  .footerAlt .legal p {
     margin-bottom: 0;
   }
-  footer .legal a {
+  .footerAlt .legal p:nth-child(2) {
+    margin-top: 0 !important;
+  }
+  .footerAlt .legal a {
     margin-right: 1rem;
     margin-bottom: 0;
   }
-  footer .legal .links {
+  .footerAlt .legal .links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  footer .legal .links p {
+  .footerAlt .legal .links p {
     margin-bottom: 0;
   }
 }

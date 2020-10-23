@@ -11,17 +11,19 @@ import React from "react";
 // Components
 
 import { Component } from "react";
-// import Nav from "./nav";
+import Nav from "./nav";
 import CopyBlock from "./copyBlock";
 import CardWidget from "./cardWidget";
-// import Footer from "./footer";
+import Footer from "./footer";
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
+        <Nav />
         <CopyBlock />
         <CardWidget />
+        <Footer />
       </div>
     );
   }

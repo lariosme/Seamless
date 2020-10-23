@@ -33,15 +33,18 @@
     p {
       //Properties
       margin: 0 $sm-spacer + $sm-spacer;
-      margin-bottom: $md-spacer;
+      margin-bottom: $xs-spacer;
       text-align: center;
       //Styles
       color: $tuatara;
+      &:nth-child(2){
+        margin-bottom: $md-spacer;
+      }
     }
   }
 }
 @include large {
-  footer {
+  .footerAlt {
     a {
       //Properties
       text-align: left;
@@ -49,9 +52,13 @@
     .legal {
       //Properties
       flex-direction: row;
+      justify-content: space-between;
       p {
         //Properties
         margin-bottom: 0;
+        &:nth-child(2) {
+          margin-top: 0 !important;
+        }
       }
       a {
         //Properties
