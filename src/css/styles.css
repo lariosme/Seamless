@@ -278,6 +278,7 @@ p {
   margin-bottom: 0;
 }
 
+.btn,
 .btn-primary {
   font-size: 0.875rem;
   line-height: 1rem;
@@ -290,6 +291,7 @@ p {
   padding: 0 2rem;
   color: white;
 }
+.btn:hover,
 .btn-primary:hover {
   background-color: RGBA(24, 110, 207, 1);
   color: white;
@@ -297,26 +299,22 @@ p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.btn:active,
 .btn-primary:active {
-  background-color: #333333 !important;
+  background-color: #333333;
 }
 
-.navButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.navButtons .navButton {
+.navButton {
   border: 1px solid RGBA(0, 38, 119, 1);
   border-radius: 2rem;
+  width: auto !important;
   height: 1.5rem;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
   background-color: white;
-  width: 13.5rem;
+  width: auto;
   color: #002677;
   font-size: 14px;
-  font-family: "UHC 2020 Sans Bold";
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,6 +325,57 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.navButton .fasLeft {
+  margin-left: 4px;
+}
+.navButton .fasRight {
+  margin-right: 4px;
+}
+.navButton:hover {
+  background-color: whitesmoke;
+}
+.navButton:focus {
+  background-color: whitesmoke;
+}
+.navButton:active {
+  background-color: white !important;
+}
+
+.navButtonNoBorder {
+  border-radius: 2rem;
+  height: 1.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-left: 16px;
+  background-color: white;
+  width: auto;
+  color: #002677;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navButtonNoBorder .fasLeft {
+  margin-left: 4px;
+}
+.navButtonNoBorder .fasRight {
+  margin-right: 4px;
+}
+.navButtonNoBorder:hover {
+  background-color: whitesmoke;
+}
+.navButtonNoBorder:focus {
+  background-color: whitesmoke;
+}
+.navButtonNoBorder:active {
+  background-color: white !important;
 }
 
 a {
@@ -355,15 +404,11 @@ a:hover {
 }
 
 .navLink {
+  color: RGBA(0, 38, 119, 1);
   font-size: 0.875rem;
   line-height: 1rem;
-  font-weight: 600;
-}
-.navLink:hover {
-  background-color: whitesmoke;
-}
-.navLink:focus {
-  background-color: whitesmoke;
+  font-weight: bold;
+  text-transform: none;
 }
 
 .footerLink p {
@@ -427,6 +472,13 @@ nav .mobileNav .container {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 100%;
   }
   nav .desktopNav .top {
     display: -webkit-box;
@@ -441,7 +493,7 @@ nav .mobileNav .container {
     margin: auto;
     width: 62rem;
     height: 6rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background-color: white;
   }
   nav .desktopNav .top .logo {
@@ -450,9 +502,13 @@ nav .mobileNav .container {
   nav .desktopNav .top a {
     margin-right: 0.5rem;
   }
+  nav .desktopNav .top p {
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 0.25rem;
+  }
   nav .desktopNav .top .lni, nav .desktopNav .top .fas {
     color: RGBA(0, 38, 119, 1);
-    margin-right: 1rem;
   }
   nav .desktopNav .top .notification {
     color: RGBA(245, 183, 0, 1);
@@ -468,6 +524,21 @@ nav .mobileNav .container {
     padding: 1rem;
   }
 }
+.relative {
+  position: relative;
+}
+
+.navProvider {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  padding: 32px;
+  width: 400px;
+}
+.navProvider li {
+  list-style: none;
+}
+
 .copyBlock {
   margin-bottom: 64px;
   text-align: center;
@@ -668,30 +739,30 @@ nav .mobileNav .container {
 }
 
 @media (min-width: 62rem) {
-  footer .logo {
+  .footer .logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
     margin-right: 0;
     margin-left: 0;
   }
-  footer a {
+  .footer a {
     text-align: left;
   }
-  footer .legal {
+  .footer .legal {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  footer .legal p {
+  .footer .legal p {
     margin-bottom: 0;
   }
-  footer .legal a {
+  .footer .legal a {
     margin-right: 1rem;
     margin-bottom: 0;
   }
-  footer .legal .links {
+  .footer .legal .links {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -700,6 +771,17 @@ nav .mobileNav .container {
 }
 .form {
   margin-bottom: 32px;
+}
+
+label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.2px;
+}
+
+input:focus {
+  background: red !important;
 }
 
 input {
@@ -719,4 +801,26 @@ input {
 
 input:checked {
   border: 6px solid RGBA(24, 110, 207, 1);
+}
+
+.form-control {
+  background: white;
+  border: 1px solid #333333;
+  border-radius: 4px;
+}
+
+.form-text,
+.text-muted {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+}
+
+select, .form-control {
+  background: url(https://cdn2.iconfinder.com/data/icons/font-awesome/1792/caret-down-256.png);
+  background-size: 16px;
+  background-position: calc(100% - 12px) center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

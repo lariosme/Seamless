@@ -1,23 +1,61 @@
 .form {
-    margin-bottom: $md-spacer;
-  }
+  margin-bottom: $md-spacer;
+}
 
-  input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  
-    border: 2px solid #999;
-    transition: 0.2s all linear;
-    margin-right: 5px;
-  
-    position: relative;
+label {
+  color: $tuatara;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.2px;
+}
+
+input:focus {
+  background: red !important;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+}
+
+input:checked {
+  border: 6px solid $navy-blue;
+}
+
+.form-control {
+  background: $white;
+  border: 1px solid $tuatara;
+  border-radius: 4px;
+}
+
+.form-text,
+.text-muted {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.form-group {
+  select {
   }
-  
-  input:checked {
-    border: 6px solid $navy-blue;
-  }
+}
+
+select, .form-control {
+  background: url(https://cdn2.iconfinder.com/data/icons/font-awesome/1792/caret-down-256.png);
+  background-size: 16px;
+  background-position: calc(100% - 12px) center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

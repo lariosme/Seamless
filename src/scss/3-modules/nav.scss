@@ -51,6 +51,9 @@ nav {
       .navUtilities {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
       }
       .top {
         display: flex;
@@ -59,7 +62,7 @@ nav {
         margin: auto;
         width: 62rem;
         height: 6rem;
-        padding: 2rem;
+        padding: 1rem 2rem;
         background-color: $white;
 
         .logo {
@@ -68,10 +71,13 @@ nav {
         a {
           margin-right: 0.5rem;
         }
-
+        p {
+          margin-bottom: 0;
+          margin-left: $sm-spacer;
+          margin-right: 0.25rem;
+        }
         .lni, .fas {
           color: $catalina-blue;
-          margin-right: 1rem;
         }
         .notification {
           color: $ucla-gold;

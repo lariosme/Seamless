@@ -1,0 +1,14 @@
+.relative {
+    position: relative;
+}
+
+.navProvider {
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    padding: $md-spacer;
+    width: 400px;
+    li {
+        list-style: none;
+    }
+}

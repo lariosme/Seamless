@@ -7,7 +7,10 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 // Pages
 
 // Bootstrap Components
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+
+// Components
+import NavProvider from "./navProvider";
 
 class Nav extends Component {
   render() {
@@ -24,22 +27,19 @@ class Nav extends Component {
             <div className="top">
               <img src={"/assets/logo-uhc-link.svg"} className="logo" />
               <div className="navUtilities">
-                <div className="">
+                <div className="row">
                   <Router>
-                    <Link>Return to Link Dashboard</Link>
-                    <i class="fas fa-xs fa-external-link-alt"></i>
-                    <Link>Help</Link>
-                    <i class="fas fa-question-circle"></i>
-                    <Link>Track It</Link>
-                    <i class="fas fa-circle notification"></i>
-                    <i class="fas fa-user-circle"></i>
-                    <Link>My Account</Link>
-                    <i class="fas fa-angle-down"></i>
+                    <Button className="navButtonNoBorder"><Link className="navLink">Return to Link Dashboard<i class="fas fa-xs fa-external-link-alt fasLeft"></i></Link></Button>
+                    <Button className="navButtonNoBorder"><Link className="navLink"><i class="fas fa-question-circle fasRight"></i>Help</Link></Button>
+                    <Button className="navButtonNoBorder"><Link className="navLink">Track It<i class="fas fa-circle notification fasLeft"></i></Link></Button>
+                    <Button className="navButtonNoBorder"><Link className="navLink"><i class="fas fa-user-circle fasRight"></i>My Account<i class="fas fa-angle-down fasLeft"></i></Link></Button>
                   </Router>
                 </div>
-                <div className="navButtons">
-                  <button className="navButton">87726 - UnitedHealthcare<i class="fas fa-angle-down"></i></button>
-                  <button className="navButton">Scott Brundle<i class="fas fa-angle-down"></i></button>
+                <div className="row relative">
+                  <Router>
+                    <p>Payer</p><Button className="navButton"><Link className="navLink">87726 - UnitedHealthcare <i class="fas fa-angle-down fasLeft"></i></Link></Button>
+                    <p>Provider</p><NavProvider />
+                  </Router>
                 </div>
               </div>
             </div>
